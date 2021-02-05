@@ -5,6 +5,13 @@ const expressLayouts = require('express-ejs-layouts');
 // setup database
 const db = require('./config/mongoose');
 
+//setup cookie parser
+const cookieParser = require('cookie-parser');
+app.use(cookieParser());
+// const { urlencoded } = require('express');
+
+app.use(express.urlencoded());
+
 app.use(expressLayouts);
 app.use(express.static('./assets'));
 
