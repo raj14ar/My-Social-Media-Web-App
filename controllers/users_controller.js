@@ -1,14 +1,10 @@
 const { connect } = require('mongoose');
+const Post = require('../models/post');
 const User = require('../models/users');
 
 module.exports.profile = function(req,res){
     return res.render('user_profile',{
         title: 'Profile'
-    });
-}
-module.exports.post = function(req,res){
-    return res.render('user_post',{
-        title: 'Post'
     });
 }
 module.exports.signUp = function(req,res){
