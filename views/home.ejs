@@ -1,6 +1,7 @@
 <h1>
     Codeial / <%= title %>
 </h1>
+<% if(locals.user) {%>
 <section id="feed-post">
     <h3>Posts</h3>
     <form action="/posts/create" id="new-post-form" method="POST">
@@ -18,3 +19,4 @@
 
     </div>
 </section>
+<%}%>
