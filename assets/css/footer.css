@@ -1,0 +1,28 @@
+#layout-footer {
+  color: white;
+  background: grey;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+#layout-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#layout-footer #footer-nav-container {
+  width: 50%;
+}
+
+#layout-footer #footer-nav-container .footer-nav {
+  width: 20%;
+}
+
+#layout-footer #footer-nav-container .footer-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
